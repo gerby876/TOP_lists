@@ -120,6 +120,10 @@ class LinkedList {
   removeAt(index) {
     let x = 0;
     let tmp = this.head;
+    if (index == 0) {
+      this.head = tmp.next;
+      return;
+    }
     while (x < index - 1) {
       tmp = tmp.next;
       x++;

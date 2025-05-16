@@ -31,6 +31,6 @@ console.log(list.toString());
 
 list.insertAt("frog", 2);
 
-list.removeAt(3);
+list.removeAt(0);
 
 console.log(list.toString());
