@@ -128,6 +128,11 @@ class LinkedList {
       tmp = tmp.next;
       x++;
     }
+    if (tmp.next.next == null) {
+      this.pop();
+      return;
+    }
+    console.log(tmp.next);
     tmp.next = tmp.next.next;
   }
 }
